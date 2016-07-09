@@ -1,5 +1,5 @@
 export function consoleRec(arr, index){
-    if (arr.length != index){
+    if (arr[index]){
         console.log(arr[index++]);
         consoleRec(arr, index);
     }

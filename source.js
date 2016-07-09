@@ -3,6 +3,8 @@
 
 var _recursion = require('./recursion');
 
+//let consoleRec = require('./recursion').consoleRec;
+
 (0, _recursion.consoleRec)(['я', 'умею', 'писать', 'рекурсивные', 'функции'], 0);
 
 },{"./recursion":2}],2:[function(require,module,exports){
@@ -13,10 +15,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.consoleRec = consoleRec;
 function consoleRec(arr, index) {
-    if (arr.length != index) {
+    if (arr[index]) {
         console.log(arr[index++]);
         consoleRec(arr, index);
     }
 }
+
+// module.exports.consoleRec = consoleRec;
+//consoleRec(['я', 'умею', 'писать', 'рекурсивные', 'функции'], 0);
 
 },{}]},{},[1]);
